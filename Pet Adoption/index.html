@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe4e1;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+    }
+    section {
+      padding: 2rem;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      background-color: #ffb6c1;
+      border-radius: 12px;
+      margin-top: 0.5rem;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 400px;
+      margin: auto;
+    }
+    form input,
+    form textarea {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.5rem;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Adoption Center</h1>
+    <nav>
+      <a href="#pets">Available Pets</a>
+      <a href="#process">Adoption Process</a>
+      <a href="#stories">Success Stories</a>
+      <a href="#volunteer">Volunteer Form</a>
+    </nav>
+  </header>
+
+  <section id="pets">
+    <h2>Available Pets</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://placedog.net/400/300?id=1" alt="Dog 1">
+        <h3>Buddy</h3>
+        <p>Age: 3 years</p>
+        <span class="tag">Playful</span>
+      </div>
+      <div class="card">
+        <img src="https://placedog.net/400/300?id=2" alt="Dog 2">
+        <h3>Max</h3>
+        <p>Age: 2 years</p>
+        <span class="tag">Energetic</span>
+      </div>
+	<div class="card">
+	<img src="C:\Users\SRICHARAN\OneDrive\Desktop\Pet Adoption\images\kitten.jpg" alt="Cat 1">	
+	<h3>Luna</h3>
+	<p>Age: 4 years</p>
+	<span class="tag">Calm</span>
+	</div>
+	<div class="card">
+  	<img src="C:\Users\SRICHARAN\OneDrive\Desktop\Pet Adoption\images\360_F_231173210_stzZNH7tblr3esfej44EpbKqAQfbkfsT.jpg" alt="Cat 2">
+  	<h3>Milo</h3>
+  	<p>Age: 1 year</p>
+  	<span class="tag">Curious</span>
+	</div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>Adoption Process</h2>
+    <ol>
+      <li>Browse available pets and choose your match.</li>
+      <li>Fill out the adoption application form.</li>
+      <li>Schedule a meet-and-greet.</li>
+      <li>Complete adoption paperwork and take your new friend home.</li>
+    </ol>
+  </section>
+
+  <section id="stories">
+    <div class="section-head">
+      <h2>Success Stories</h2>
+      <div class="lead">Past adoptions — before & after</div>
+    </div>
+    <div class="stories">
+      <div class="story">
+        <strong>Buddy & The Sharma family</strong>
+        <p class="lead">Buddy found a forever home — now loves morning walks and chasing butterflies.</p>
+      </div>
+      <div class="story">
+        <strong>Misty & Aisha</strong>
+        <p class="lead">Misty was shy at first — now she naps on Aisha's keyboard every afternoon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="volunteer">
+    <h2>Volunteer Form</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Why do you want to volunteer?" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
